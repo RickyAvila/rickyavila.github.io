@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RICKY AVILA</title>
+<style type="text/css">
+body{
+  background-color: #eeeeee;
+  font-family: courier new;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* logo */
+div#logo{
+  width: 150px;
+  height: 150px;
+  display: block;
+  background: black center bottom url("http://i59.tinypic.com/30wlgqp.png");
+  color: #eeeeee;
+  font-size: 100px;
+  line-height: 150px;
+  text-align: center;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+-webkit-transition: all .25s linear;
+-moz-transition: all .25s linear;
+-ms-transition: all .25s linear;
+-o-transition: all .25s linear;
+transition: all .25s linear;
+}
+div#logo:hover{
+  background: black center top url("http://i59.tinypic.com/30wlgqp.png");
+}
+div#picture{
+  display: block;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 230px;
+  left: 50px;
+  
+}
+
+/* body */
+div#body{
+  width: 800px;
+  position: absolute;
+  left: 250px;
+  top: 50px;
+}
+
+/* navigation */
+ul#navigation{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 30px;
+  display: block;
+  background: #d9d9d9;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+ul#navigation li{
+  display: inline-block;
+  margin: 0;
+  margin-top: 5px;
+}
+ul#navigation li:first-child{
+  margin-left: 50px;
+}
+ul#navigation li a{
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-decoration: none;
+  margin-right: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+ul#navigation li a:hover{
+  border-bottom: 1px solid black;
+}
+
+/* "ricky avila" background at the bottom */
+div#background{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 100px;
+  line-height: 100px;
+  width: 470px;
+  height: 70px;
+  letter-spacing: -20px;
+  color: #aaa;
+  overflow: hidden;
+}
+
+/* pages all set to "display: none;" except for home */
+div#about, div#portfolio{
+  display: none;
+}
+</style>
+
+<script>
+var j_page;
+
+function navigation() {
+  if(j_page == "home"){
+    document.getElementById("home").style.display = "block";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("portfolio").style.display = "none";
+  } else if(j_page == "about"){
+    document.getElementById("home").style.display = "none";
+    document.getElementById("about").style.display = "block";
+    document.getElementById("portfolio").style.display = "none";
+  } else if(j_page == "portfolio"){
+    document.getElementById("home").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("portfolio").style.display = "block";
+  }
+}
+</script>
+</head>
+<body>
+
+<ul id="navigation">
+  <li><a href="#" onClick="j_page = 'home'; navigation(); return true">Home</a></li>
+  <li><a href="#" onClick="j_page = 'about'; navigation(); return true">About</a></li>
+  <li><a href="#" onClick="j_page = 'portfolio'; navigation(); return true">Portfolio</a></li>
+</ul>
+  
+<div id="logo">R</div>
+
+<div id="body">
+
+<div id="home">
+<h1>RICKY AVILA</h1>
+Hello, and welcome to my online portfolio which is on github! Here i will be posting various links to various projects that i have been working on right now and in the past for school, fun, and personal use. I am a freshman in college and i look forward into learning more about computer science, programming and design! Feel free to mail me with any questions or concerns you have about me or my projects that i have done. This site will be updated once i have the time to fiddle with my github account!<br><br>
+  
+  <h1>UPDATES</h1>
+  <b><u>10.1.14</u></b> site is up and running
+</div>
+
+<div id="about">
+  <div style="width:400px;float:left;">
+    <img src='http://i61.tinypic.com/qovwc7.png' />
+  </div>
+  <div style="width:370px;float:right;">
+    <h1>ABOUT ME</h1>
+    Hello! As you can tell, my name is <b>Ricky Avila</b>. I am currently a freshman at the University of Texas in Austin, and i am majoring in Computer Science. I aspire to be working on web developement and UI design in the future, but right now, im learning how to program and about other numerous aspects that computer science has to offer.<br><br>
+    
+    Have any questions? comments or concerns about any projects that i have posted on github? then please feel free to mail me though my email:<br><br>
+    
+    <b>CONTACT:</b> RickA96@gmail.com
+  </div>
+</div>
+  
+<div id="portfolio">
+  <h1>PORTFOLIO</h1>
+  <i>Nothing so far! :-(</i>
+</div>
+
+</div>
+  
+  <div id="background">RICKY AVILA</div>
+
+</body>
+</html>
